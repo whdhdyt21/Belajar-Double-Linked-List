@@ -23,7 +23,7 @@ struct DoubleLinkedList
             tail = NULL;
         }
     
-        void addNode(string newValues) //belakang
+        void addNode(string newValues) //Menambah data / menambah dari belakang
         {
             DNode* tmp = new DNode();
             tmp->nodeValue = newValues;
@@ -42,7 +42,7 @@ struct DoubleLinkedList
             }
         }
 
-        void addNodefront(string newValues) //depan
+        void addNodefront(string newValues) //Menambah data depan
         {
             DNode* tmp = new DNode();
             tmp->nodeValue = newValues;
@@ -104,7 +104,7 @@ struct DoubleLinkedList
             }
         }
 
-        void insert(string nData, string n) //Menyisipkan Node di Double Linked List
+        void insert(string nData, string n) //Menyisipkan Node di Double Linked List Sesuai Target
         {
             DNode* newNode = new DNode();
             DNode* cur = head;
@@ -129,7 +129,7 @@ struct DoubleLinkedList
             }
         }
 
-        void deleteNode(string nData)//Menghapus Node Sesuai Target
+        void deleteNode(string nData)//Menghapus Node di Double Linked List Sesuai Target
         {
             DNode* cur = head;
             DNode* prevNode = NULL;
